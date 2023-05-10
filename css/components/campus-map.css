@@ -1,0 +1,9 @@
+.campus-map {
+    display: flex;
+    justify-content: center;
+}
+
+.campus-map-image {
+    display: flex;
+    justify-content: center;
+}

@@ -3,8 +3,15 @@
 @import "variables.css";
 
 /* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/campus-map.css";
 
 /* Screens */
+@import "screens/main.css";
 
 body {
     font-family: 'Ubuntu', sans-serif;
