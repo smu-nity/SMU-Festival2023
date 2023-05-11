@@ -1,9 +1,5 @@
 .nav {
-    position: fixed;
-    bottom: 0;
+    display: flex;
     width: 100%;
-    background-color: rgba(188, 220, 248, 0.7);
-    padding: 20px 40px;
-    box-sizing: border-box;
-    border-top: 1px solid rgba(176, 211, 239, 0.7)
+    background-color: rgba(219, 226, 233, 0.7);
 }

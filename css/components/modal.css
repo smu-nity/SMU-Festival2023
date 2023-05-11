@@ -17,3 +17,50 @@
 .modal.open {
     box-shadow: 0 1px 20px #0000001a;
 }
+
+
+.bottom_sheet{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    overflow-y: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom_sheet_handle_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    height: 20%;
+}
+
+.bottom_sheet_handle{
+    width: 20%;
+    height: 10px;
+    background-color: #7c7979;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.bottom_box{
+    width: 80%;
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    transition-duration: 3s;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bottom_box_title{
+    width: 100%;
+}
