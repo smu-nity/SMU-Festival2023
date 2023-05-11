@@ -1,9 +1,15 @@
 .campus-map {
     display: flex;
     justify-content: center;
+
+    touch-action: manipulation;
 }
 
 .campus-map-image {
     display: flex;
     justify-content: center;
+    width: 120%;
+    height: 120%;
+
+
 }

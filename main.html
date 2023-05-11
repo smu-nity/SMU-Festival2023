@@ -2,43 +2,69 @@
 <html lang="en">
 
 <head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css" />
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Archive</title>
+
 </head>
 
-<body>
+<body id="main_background">
   <header class="screen-header">
-    <h1 class="screen-header__title">Archive 축제 캠퍼스맵</h1>
+    <image class="screen-header__title" src="/img/home/header.png">
   </header>
 
+  <div class="modal">
+    <h3>Drag me</h3>
+  </div>
+
+
+
   <nav class="nav">
-    <ul class="nav__list">
-      <li class="nav__btn">
-        <a class="nav__a" href="friends.html">
-          <i class="fas fa-utensils fa-2x"></i>
-        </a>
-      </li>
-      <li class="nav__btn">
-        <a class="nav__a" href="chats.html">
-          <span class="nav__notification badge"></span>
-          <i class="far fa-comment fa-2x"></i>
-        </a>
-      </li>
-      <li class="nav__btn">
-        <a class="nav__a" href="find.html">
-          <i class="fas fa-guitar fa-2x"></i>
-        </a>
-      </li>
-      <li class="nav__btn">
-        <a class="nav__a" href="more.html">
-          <span class="nav__dot"></span>
-          <i class="fa-solid fa-ellipsis fa-2x"></i>
-        </a>
-      </li>
-    </ul>
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            자하관 앞
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Test1</a></li>
+            <li><a href="#">Test2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            에스컬레이터 앞
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Test3</a></li>
+            <li><a href="#">Test4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            공대 앞
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Test5</a></li>
+            <li><a href="#">Test6</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            어디어디
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Test3</a></li>
+            <li><a href="#">Test4</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
   </nav>
 
   <a id="emergency-alarm">
@@ -46,18 +72,28 @@
     <span>실제와 차이가 있을 수 있음 or 긴급알림 .. - 요정도 내용 ?</span>
   </a>
 
-  <main class="main-screen">
+  <main class="main-screen" id="engineer">
     <div class="campus-map">
-      <img src="img/CampusMap.png" class="campus-map-image" />
+      <img src="/img/home/map.png" class="campus-map-image" content="user-scalable=yes" />
     </div>
   </main>
 
-  <h1>바텀시트로 해당 내용 처리</h1>
-  <h1>캠퍼스맵은 임시 이미지. 수정 예정</h1>
-  <h1>nav 에 경영대, 공대, 공연 등등.. 추가 예정</h1>
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Draggable.min.js"></script>
+  <script src="/js/modal.js" defer></script>
   <script src="https://kit.fontawesome.com/b5ef74a2d5.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
 </body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="static/js/includeHTML.js"></script>
 
 </html>

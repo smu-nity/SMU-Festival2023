@@ -2,35 +2,8 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #f9f9fa;
+    background-color: rgba(188, 220, 248, 0.7);
     padding: 20px 40px;
     box-sizing: border-box;
-    border-top: 1px solid rgba(121, 121, 121, 0.3);
-    z-index: 1;
-}
-
-.nav__list {
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav__a {
-    color: #2e363e;
-    position: relative
-}
-
-.nav__notification {
-    position: absolute;
-    left: 15px;
-    bottom: 15px;
-}
-
-.nav__dot {
-    background-color: tomato;
-    width: 7px;
-    height: 7px;
-    border-radius: 5px;
-    position: absolute;
-    left: 30px;
-    bottom: 25px;
+    border-top: 1px solid rgba(176, 211, 239, 0.7)
 }

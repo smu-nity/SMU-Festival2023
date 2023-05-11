@@ -9,9 +9,13 @@
 @import "components/badge.css";
 @import "components/icon-row.css";
 @import "components/campus-map.css";
+@import "components/bottomsheet.css";
+@import "components/modal.css";
+
 
 /* Screens */
 @import "screens/main.css";
+@import "screens/home.css";
 
 body {
     font-family: 'Ubuntu', sans-serif;

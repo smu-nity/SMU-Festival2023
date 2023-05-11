@@ -1,0 +1,19 @@
+.modal {
+    z-index: 10;
+    text-align: center;
+    width: 450px;
+    height: 300px;
+    border-radius: 18px;
+    padding: 4px 12px;
+    background-color: rgba(255, 255, 255, 83%);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(6px) saturate(180%);
+    box-shadow: 0 1px 8px #0000001a;
+}
+
+.modal.open {
+    box-shadow: 0 1px 20px #0000001a;
+}

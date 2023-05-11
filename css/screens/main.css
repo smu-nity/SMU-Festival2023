@@ -1,14 +1,37 @@
 #emergency-alarm {
     text-align: center;
     display: block;
-    background-color: #fafafa;
+    background: rgba(250, 250, 250, 0.6);
     padding: 10px 0px;
-    font-size: 16px;
+    font-size: 10px;
     margin-bottom: 10px;
-
 }
 
 #emergency-alarm i {
     color: rgba(0, 0, 0, 0.3);
     margin: 0px 5px;
+}
+
+#main_background {
+    background: url(/img/home/background.png) no-repeat left top;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-toggle {
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
