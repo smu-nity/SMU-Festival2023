@@ -8,8 +8,6 @@ var pre = 0;
 //맵 중앙 정렬
 var height = document.getElementsByClassName('container')[0].scrollHeight;
 var width = document.getElementsByClassName('container')[0].scrollWidth;
-console.log(height/2);
-console.log(width/2);
 document.getElementsByClassName('container')[0].scroll({left: 730, top: 700, behavior:'smooth'});
 
 
@@ -36,23 +34,22 @@ scroll_button.addEventListener("touchstart", (e) => {
   });
 
   
-var isUp = 0;
-document.getElementsByClassName('up_sensor')[0].addEventListener("scroll", (e) => {
-    console.log("do")
-    var bottom_sheet = document.getElementsByClassName('bottom_sheet')[0]
-    var func1 = setInterval(function(){
-        var i =1;
-        if(i<50){
-            bottom_sheet.style.height = 20+ i + "%";
-            i++;
-        } else{
-          clearInterval(func1);
-        }
-         },5);
-
-    isUp = 1;
-    document.getElementsByClassName('up_sensor')[0].style.display = "none";
-});
+// var isUp = 0;
+// document.getElementsByClassName('up_sensor')[0].addEventListener("scroll", (e) => {
+//     console.log("do")
+//     var bottom_sheet = document.getElementsByClassName('bottom_sheet')[0]
+//     var func1 = setInterval(function(){
+//         var i =1;
+//         if(i<50){
+//             bottom_sheet.style.height = 20+ i + "%";
+//             i++;
+//         } else{
+//           clearInterval(func1);
+//         }
+//          },5);
+//     isUp = 1;
+//     document.getElementsByClassName('up_sensor')[0].style.display = "none";
+// });
 
   
 
