@@ -36,27 +36,43 @@ scroll_button.addEventListener("touchstart", (e) => {
   });
 
   
+var isUp = 0;
+document.getElementsByClassName('up_sensor')[0].addEventListener("scroll", (e) => {
+    console.log("do")
+    var bottom_sheet = document.getElementsByClassName('bottom_sheet')[0]
+    var func1 = setInterval(function(){
+        var i =1;
+        if(i<50){
+            bottom_sheet.style.height = 20+ i + "%";
+            i++;
+        } else{
+          clearInterval(func1);
+        }
+         },5);
 
+    isUp = 1;
+    document.getElementsByClassName('up_sensor')[0].style.display = "none";
+});
 
-  document.getElementsByClassName('bottom_sheet')[0].addEventListener("scroll", (e) => {
-    
+  
+
+document.getElementsByClassName('bottom_sheet')[0].addEventListener("scroll", (e) => {
     var bottom_sheet = document.getElementsByClassName('bottom_sheet')[0]
     var height = getComputedStyle(document.getElementsByClassName('bottom_sheet')[0]).height.slice(0,-2);
     //바텀시트 올라오기
     if (height < 200){
         var i=1;
-     var func1 = setInterval(function(){
+        var func1 = setInterval(function(){
        if(i<50){
            bottom_sheet.style.height = 20+ i + "%";
            i++;
        } else{
          clearInterval(func1);
        }
-     },5);
+        },5);
     }
 
-    console.log(bottom_sheet.scrollTop)
-
+    //바텀시트 내리기
     if(bottom_sheet.scrollTop == 0){
         var i = 1;
         var func1 = setInterval(function(){
