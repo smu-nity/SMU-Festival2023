@@ -59,7 +59,7 @@ bottom_sheet.addEventListener("touchstart", (e) => {
 
 
 bottom_sheet.addEventListener("touchmove", (e) => {
-    if( ((bottom_touch_start - e.touches[0].pageY) < 0)  &&  (bottom_scroll_start == 0)   ){
+    if( ((bottom_touch_start - e.touches[0].pageY) < 0)  &&  (bottom_scroll_start <= 0)   ){
         //바텀시트 내리기
         bottom_sheet.style.height = 20+"%"
         document.getElementsByClassName('up_sensor')[0].style.display = "block";
