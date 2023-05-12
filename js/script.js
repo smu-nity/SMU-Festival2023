@@ -12,6 +12,7 @@ document.getElementsByClassName('container')[0].scroll({left: 730, top: 700, beh
 
 
 scroll_button.addEventListener("touchstart", (e) => {
+    console.log("saved!!!")
     startPoint = e.touches[0].pageY; // 터치가 시작되는 위치 저장
   });
 
@@ -34,53 +35,34 @@ scroll_button.addEventListener("touchstart", (e) => {
   });
 
   
-// var isUp = 0;
-// document.getElementsByClassName('up_sensor')[0].addEventListener("scroll", (e) => {
-//     console.log("do")
-//     var bottom_sheet = document.getElementsByClassName('bottom_sheet')[0]
-//     var func1 = setInterval(function(){
-//         var i =1;
-//         if(i<50){
-//             bottom_sheet.style.height = 20+ i + "%";
-//             i++;
-//         } else{
-//           clearInterval(func1);
-//         }
-//          },5);
-//     isUp = 1;
-//     document.getElementsByClassName('up_sensor')[0].style.display = "none";
-// });
+var isUp = 0;
+document.getElementsByClassName('up_sensor')[0].addEventListener("touchmove", (e) => {
+    var bottom_sheet = document.getElementsByClassName('bottom_sheet')[0]
+    bottom_sheet.style.height = 70 + "%"
+    document.getElementsByClassName('up_sensor')[0].style.height = 70+"%";
+    setTimeout(function() {
+        document.getElementsByClassName('up_sensor')[0].style.display = "none";
+      }, 1000);
+    
+});
 
   
+var bottom_sheet = document.getElementsByClassName('bottom_sheet')[0];
+let bottom_touch_start = 0;
+let bottom_scroll_start;
 
-document.getElementsByClassName('bottom_sheet')[0].addEventListener("scroll", (e) => {
-    var bottom_sheet = document.getElementsByClassName('bottom_sheet')[0]
-    var height = getComputedStyle(document.getElementsByClassName('bottom_sheet')[0]).height.slice(0,-2);
-    //바텀시트 올라오기
-    if (height < 200){
-        var i=1;
-        var func1 = setInterval(function(){
-       if(i<50){
-           bottom_sheet.style.height = 20+ i + "%";
-           i++;
-       } else{
-         clearInterval(func1);
-       }
-        },5);
-    }
+bottom_sheet.addEventListener("touchstart", (e) => {    
+    bottom_touch_start = e.touches[0].pageY; // 터치가 시작되는 위치 저장
+    bottom_scroll_start = bottom_sheet.scrollTop //터치 시작 시 스크롤 위치 저장
+});
 
-    //바텀시트 내리기
-    if(bottom_sheet.scrollTop == 0){
-        var i = 1;
-        var func1 = setInterval(function(){
-            if(i<50){
-                bottom_sheet.style.height = 70 - i + "%";
-                i++;
-            } else{
-              clearInterval(func1);
-            }
-          },5);
-    }
 
-  });
 
+bottom_sheet.addEventListener("touchmove", (e) => {
+    if( ((bottom_touch_start - e.touches[0].pageY) < 0)  &&  (bottom_scroll_start == 0)   ){
+        //바텀시트 내리기
+        bottom_sheet.style.height = 20+"%"
+        document.getElementsByClassName('up_sensor')[0].style.display = "block";
+        document.getElementsByClassName('up_sensor')[0].style.height = "20%";
+    };
+});

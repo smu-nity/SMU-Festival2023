@@ -32,6 +32,7 @@
     overflow-y: auto;
     flex-direction: column;
     align-items: center;
+    transition-duration: 1s;
 }
 
 .bottom_sheet_handle_wrap{
@@ -56,7 +57,7 @@
     padding: 5px;
     border: 1px solid lightgray;
     border-radius: 2px;
-    transition-duration: 3s;
+    transition-duration: 2s;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -68,9 +69,10 @@
 .up_sensor{
     z-index:1;
     position: absolute;
-    background: red;
-    width: 100%;
+    background: transparent;
+    width: inherit;
     height: 100%;
     bottom: 0;
     height: 20%;
+    transition-duration: 1s;
 }
