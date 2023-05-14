@@ -40,7 +40,8 @@
     justify-content: center;
     align-items: flex-start;
     width: 80%;
-    height: 20%;
+    height: 40px;
+    margin-bottom: 10px;
 }
 
 .bottom_sheet_handle{
@@ -53,17 +54,23 @@
 
 .bottom_box{
     width: 80%;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 5px;
     border: 1px solid lightgray;
-    border-radius: 2px;
+    border-radius: 10px;
     transition-duration: 2s;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .bottom_box_title{
-    width: 100%;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.bottom_box_desc{
+    margin-top: 10px;
 }
 
 .up_sensor{
@@ -75,4 +82,42 @@
     bottom: 0;
     height: 20%;
     transition-duration: 1s;
+}
+
+/* 바텀시트 박스별 색깔 */
+
+.insa{
+    background-color: rgba(255, 127, 127,0.2);
+}
+
+.sabum{
+    background-color: rgba(158, 197, 213,0.2);
+}
+
+.gyoung{
+    background-color: rgba(243, 205, 173,0.2);
+}
+
+.gong{
+    background-color: rgba(203, 159, 253,0.2);
+}
+
+.yeah{
+    background-color: rgba(175, 203, 61,0.2);
+}
+
+.chong{
+    background-color: rgba(14, 32, 127,0.2);
+}
+
+.you{
+    background-color: rgba(207, 195, 181,0.2);
+}
+
+.dong{
+    background-color: rgba(252, 206, 226,0.2);
+}
+
+.food{
+    background-color: rgba(178, 176, 174, 0.2);
 }

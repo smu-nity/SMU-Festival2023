@@ -3,3 +3,11 @@
     width: 100%;
     background-color: rgba(219, 226, 233, 0.7);
 }
+
+.btn-group{
+    border: 1px solid #9d9898;
+}
+
+.btn-group:active{
+    background-color: #4770df;
+}

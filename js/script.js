@@ -10,28 +10,38 @@ var height = document.getElementsByClassName('container')[0].scrollHeight;
 var width = document.getElementsByClassName('container')[0].scrollWidth;
 document.getElementsByClassName('container')[0].scroll({left: 730, top: 700, behavior:'smooth'});
 
+var percent = document.getElementById('scroll_per');
 
 scroll_button.addEventListener("touchstart", (e) => {
-    console.log("saved!!!")
-    startPoint = e.touches[0].pageY; // 터치가 시작되는 위치 저장
-  });
+  //퍼센트 보이기
+  percent.style.display = "flex";
+  startPoint = e.touches[0].pageY; // 터치가 시작되는 위치 저장
+});
 
-  scroll_button.addEventListener("touchmove", (e) => {
-  
-    let origin = parseInt(getComputedStyle(scroll_button).bottom.slice(0,-2));
+scroll_button.addEventListener("touchmove", (e) => {
 
-    diff = parseInt(startPoint - e.touches[0].pageY);
+  let origin = parseInt(getComputedStyle(scroll_button).bottom.slice(0,-2));
 
-    if( ((origin + (diff - pre)) > 0) && ((origin + (diff - pre)) < 290)){
-        scroll_button.style.bottom = origin + (diff - pre) + "px";
-        map.style.scale = 30+origin+"%";
-    }
+  diff = parseInt(startPoint - e.touches[0].pageY);
 
-    pre = diff;
+  var scroll_bar = document.getElementsByClassName('scroll_bar')[0];
+  let max_height = parseInt(getComputedStyle(scroll_bar).height);
+
+  if( ((origin + (diff - pre)) > 0) && ((origin + (diff - pre)) <= max_height)){
+      scroll_button.style.bottom = origin + (diff - pre) + "px";
+      map.style.scale = 30+origin+"%";
+  }
+
+  pre = diff;
+
+  //퍼센트 적용
+  var bottom_height = parseInt(getComputedStyle(scroll_button).bottom);
+  percent.innerText = parseInt(bottom_height/parseInt(max_height)*100) + "%";
 
   });
   scroll_button.addEventListener("touchend", (e) => {
     pre = 0;
+    percent.style.display = "none";
   });
 
   
