@@ -17,51 +17,61 @@
     <image class="screen-header__title" src="/img/home/header.png">
   </header>
 
-  <div class="modal">
-    <h3>Drag me</h3>
-  </div>
-
   <a id="emergency-alarm">
     <span><i class="fa-solid fa-circle-info"></i></span>
     <span>실제와 차이가 있을 수 있음 or 긴급알림 .. - 요정도 내용 ?</span>
   </a>
 
-  <nav class="nav">
-    <div id="" class="nav-box">
-      대학별
+  <div class="btn-group nav">
+    <div class="btn-group">
+      <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">btn1<span
+          class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <ul class="list-group list-group-flush">
+          <button onclick="toggleSection1()" class="list-group-item">토글예시1</button>
+          <button onclick="toggleMain()" class="list-group-item">토글예시2</button>
+          <button onclick="" class="list-group-item">item</button>
+          <button onclick="" class="list-group-item">item</button>
+        </ul>
+      </ul>
     </div>
-    <div id="" class="nav-box">
-      인사대
+    <div class="btn-group">
+      <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">btn2<span
+          class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <ul class="list-group list-group-flush">
+          <button onclick="" class="list-group-item">item</button>
+          <button onclick="" class="list-group-item">item</button>
+          <button onclick="" class="list-group-item">item</button>
+          <button onclick="" class="list-group-item">item</button>
+        </ul>
+      </ul>
     </div>
-    <div id="" class="nav-box">
-      푸드트럭
+    <div class="btn-group">
+      <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">btn3<span
+          class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <ul class="list-group list-group-flush">
+          <button onclick="" class="list-group-item">item</button>
+          <button onclick="" class="list-group-item">item</button>
+          <button onclick="" class="list-group-item">item</button>
+          <button onclick="" class="list-group-item">item</button>
+        </ul>
+      </ul>
     </div>
-    <div id="" class="nav-box">
-      어쩌고
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle " id="dropdownMenuOffset" data-bs-toggle="dropdown"
+        data-bs-auto-close="true" data-bs-offset="0,0">btn4<span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <ul class="list-group list-group-flush">
+          <button onclick="" class="list-group-item">item</button>
+          <button onclick="" class="list-group-item">item</button>
+          <button onclick="" class="list-group-item">item</button>
+          <button onclick="" class="list-group-item">item</button>
+        </ul>
+      </ul>
     </div>
-    <div id="" class="nav-box">
-      저쩌고
-    </div>
-  </nav>
-
-  <nav class="nav hidden">
-    <div id="" class="nav-box">
-      대학별
-    </div>
-    <div id="" class="nav-box">
-      인사대
-    </div>
-    <div id="" class="nav-box">
-      푸드트럭
-    </div>
-    <div id="" class="nav-box">
-      어쩌고
-    </div>
-    <div id="" class="nav-box">
-      저쩌고
-    </div>
-  </nav>
-
+  </div>
   <!-- <div class="map_background">
     <img class="campus_map" src="/img/home/map.png" alt="">
   </div> -->
@@ -74,12 +84,14 @@
   </section>
 
   <div class="scroll_bar">
-    <div class="scroll_button">ㅡ<br>ㅡ</div>
+    <div class="scroll_button">
+      <img src="/img/smu_sumung.jpg" id="smu_sumung" />
+    </div>
   </div>
 
 
   <div class="up_sensor"></div>
-  <div class="bottom_sheet">
+  <div id="bottomSheet" class="bottom_sheet">
     <div class="bottom_sheet_handle_wrap">
       <div class="bottom_sheet_handle"></div>
     </div>
@@ -137,6 +149,7 @@
       <div class="bottom_box_desc">인사대 설명입니다.</div>
     </div>
   </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Draggable.min.js"></script>
   <script src="/js/modal.js" defer></script>
@@ -155,5 +168,6 @@
   integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <script src="static/js/includeHTML.js"></script>
 <script type="text/javascript" src="/js/script.js"></script>
+<script type="text/javascript" src="/js/change.js"></script>
 
 </html>
