@@ -17,6 +17,10 @@
   
 }
 
+.map_info{
+  position: fixed;
+}
+
 .container::-webkit-scrollbar {
   display: none;
 }

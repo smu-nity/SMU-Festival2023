@@ -9,6 +9,8 @@ function toggle(e) {
     //바텀시트 전체 항목 보이기
     for (i = 0; i < all.length; i++){
       all[i].style.display = "block";
+      all[i].style.height = "200px";
+      // all[i].style.height = "auto";
     }
     //모든 버튼 초기화
     for (i = 0; i<btn.length; i++){
