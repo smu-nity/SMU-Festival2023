@@ -76,3 +76,17 @@ bottom_sheet.addEventListener("touchmove", (e) => {
         document.getElementsByClassName('up_sensor')[0].style.height = "20%";
     };
 });
+
+
+//map_info
+var width = parseInt(getComputedStyle(document.getElementById('map_info')).width);
+var info_button = document.getElementsByClassName('info_button')[0];
+document.getElementsByClassName('info_button')[0].addEventListener("click", (e) => {  
+  if(info_button.innerText == "<"){
+    document.getElementsByClassName("map_info")[0].style.left = "-"+width-7+"px";
+    info_button.innerText = ">";  
+  } else{
+    document.getElementsByClassName("map_info")[0].style.left = "0";
+    info_button.innerText = "<";
+  }
+});
