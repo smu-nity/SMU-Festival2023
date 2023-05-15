@@ -29,23 +29,24 @@
       <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">단과대<span class="caret"></span></button>
       <ul class="dropdown-menu">
         <ul class="list-group list-group-flush">
-          <button onclick="toggle(this)" class="list-group-item" target = "insa">인사대</button>
-          <button onclick="toggle(this)" class="list-group-item" target = "sabum">사범대</button>
-          <button onclick="toggle(this)" class="list-group-item" target = "gyoung">경경대</button>
-          <button onclick="toggle(this)" class="list-group-item" target = "gong">융공대</button>
-          <button onclick="toggle(this)" class="list-group-item" target = "yeah">에대</button>
-          <button onclick="toggle(this)" class="list-group-item" target = "chong">총학</button>
-          <button onclick="toggle(this)" class="list-group-item" target = "you">유학생</button>
+          <button onclick="toggle(this)" class="list-group-item" target="insa">인사대</button>
+          <button onclick="toggle(this)" class="list-group-item" target="sabum">사범대</button>
+          <button onclick="toggle(this)" class="list-group-item" target="gyoung">경경대</button>
+          <button onclick="toggle(this)" class="list-group-item" target="gong">융공대</button>
+          <button onclick="toggle(this)" class="list-group-item" target="yeah">에대</button>
+          <button onclick="toggle(this)" class="list-group-item" target="chong">총학</button>
+          <button onclick="toggle(this)" class="list-group-item" target="you">유학생</button>
         </ul>
       </ul>
     </div>
 
     <div class="btn-group">
-      <button type="button" class="btn" onclick="toggle(this)" target = "dong">동아리<span class="caret"></span></button>
+      <button type="button" class="btn" onclick="toggle(this)" target="dong">동아리<span class="caret"></span></button>
     </div>
 
     <div class="btn-group">
-      <button type="button" class="btn" onclick="toggle(this)" target = "food">푸드트럭/프로모션<span class="caret"></span></button>
+      <button type="button" class="btn" onclick="toggle(this)" target="food">푸드트럭/프로모션<span
+          class="caret"></span></button>
     </div>
 
   </div>
@@ -55,7 +56,10 @@
 
 
   <div style="position: relative;">
-    <div class="map_info"><img id="map_info" src="/img/map_info.png" alt=""><div class="info_button">&lt;</div></div>
+    <div class="map_info">
+      <img id="map_info" src="/img/map_info.png" alt="">
+      <div class="info_button">&lt;</div>
+    </div>
     <div class="container">
       <div><img id="campus_map" src="/img/map.png" alt=""></div>
     </div>
@@ -76,222 +80,1378 @@
     </div>
     <div class="bottom_box chong" onclick="location.replace('/detail_page/1.html');">
       <div class="bottom_box_title">[1],[2] 총학생회</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>총학생회</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>대무대 입장 팔찌 배부<br>컨트롤 타워</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>미술가정관 앞 <br> 사슴상 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box chong">
       <div class="bottom_box_title">[3] 바이오헬스</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>총학생회</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box you">
       <div class="bottom_box_title">[4], [5] 유학생</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>국제학생지원팀</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>각종음식</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>대학본부 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box dong">
-      <div class="bottom_box_title">[6] 어흥</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_title">[6] 어우러짐 흥 부스</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">동아리명</th>
+              <td>어우러짐 흥</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>바베큐소시지<br>팩음료(피크닉)</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>대학본부 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box dong">
       <div class="bottom_box_title">[7] 상냥행</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">동아리명</th>
+              <td>상냥행</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>상냥한 문구점</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>인형뽑기 기계로 키링뽑기/<br>요비퀴즈/<br>문구류 판매</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>대학본부 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box dong">
       <div class="bottom_box_title">[8] 체인지</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">동아리명</th>
+              <td>체인지</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>너의 입맛을 체인지</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>불닭볶음면, 컵 화채/<br>팔씨름 대회, 다트게임</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>대학본부 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box dong">
       <div class="bottom_box_title">[9] 가온누리</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">동아리명</th>
+              <td>굿네이버스 가온누리</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>크로플 주고 희망을 먹어요~^^</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>크로플 판매 <br>아동학대 관한 미니게임 (문제뽑기, OX게임)</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>대학본부 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box dong">
-      <div class="bottom_box_title">[10] IEMVII</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_title">[10] IEMUII</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">동아리명</th>
+              <td>IEMUII</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>아이엠뻥이엠유<br>(뻥차고 뻥먹어U)</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>뻥스크림과 음료판매 <br> 축구 미니게임 이벤트 진행</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>대학본부 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    
+
     <div class="bottom_box dong">
       <div class="bottom_box_title">[11],[12],[13] 멋사 X 이니로 X SMUMC</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">동아리명</th>
+              <td>멋사, 이니로, SMUMC</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>스껄<br>(스뮤 여기서 마셔야 될 껄?)</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>핫도그, 소세지, 에이드 판매</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>안주판매<br>(햄계란, 소세지, 나쵸, 오뎅탕, 군만두, 컵라면, 황도, 복분자 원액)</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>대학본부 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box dong">
       <div class="bottom_box_title">[14] IVF</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">동아리명</th>
+              <td>IVF</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>아벱 떡꼬치</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>떡꼬치 판매</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>대학본부 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    
+
     <div class="bottom_box dong">
       <div class="bottom_box_title">[15] 자하포토</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">동아리명</th>
+              <td>자하포토</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>아이스크림 폴라</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>아이스크림, 폴라로이드 사진 판매</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>대학본부 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box dong">
       <div class="bottom_box_title">[16] 맹가미</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">동아리명</th>
+              <td>맹가미</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>맹가미 전시회/굿즈판매</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>부원들이 직접 디자인한 굿즈 판매 및 그림 전시</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>대학본부 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box insa">
       <div class="bottom_box_title">[17] 지적재산권전공</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>지적재산권전공</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>팬케이크와 스뮤시그널</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>스뮤시그널, 팬케이크 판매</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>인문사회과학대학관(자하관) 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box insa">
-      <div class="bottom_box_title">[18] 인문사회과학대학</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_title">[18] 인문사회과학대학 학생회</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>인문사회과학대학 학생회</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>비빔면 먹자 했짜냐 !<br>화채 먹자 했짜냐 !</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>비빔면+대패삼겹살, 화채 판매</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>미술가정관 앞 <br> 사슴상 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box insa">
       <div class="bottom_box_title">[19] 가족복지학과</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>가족복지학과</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>수뭉방구</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>야광봉 머리핀 등 소모품 판매/<br>미니게임(샤프심 빨리빼기, 손가락 펀지 등)진행</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>인문사회과학대학관(자하관) 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box insa">
       <div class="bottom_box_title">[20] 공간환경학부</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>공간환경학부</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>키링키링 체인지</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>슈링크스 키링 만들기/<br>사탕팅</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>인문사회과학대학관(자하관) 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box insa">
       <div class="bottom_box_title">[21] 역사콘텐츠전공</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>역사콘텐츠전공</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>역콘주막</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>식음료 판매(무알콜 칵테일, 전류)</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>인문사회과학대학관(자하관) 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box insa">
       <div class="bottom_box_title">[22] 문헌정보학전공</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>문헌정보학전공</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>잔잔BAR...y</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>논알콜 칵테일류(체리콕, 모히또, 블루하와이) 판매/<br>SNS 인증을 통한 이벤트 진행</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>인문사회과학대학관(자하관) 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box insa">
       <div class="bottom_box_title">[23] 국가안보학과</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>국가안보학과</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>탕탕탕! 특등사수!</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>장난감 권총을 이용하여 목표물을 사격하는 미니게임</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>인문사회과학대학관(자하관) 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
+
     <div class="bottom_box sabum">
-      <div class="bottom_box_title">[24] 사범대학</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_title">[24] 사범대학 학생회</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>사범대학 학생회</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>더 퍼스트 사범덩크(주간) / 달빛주점(야간)</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>미니게임(농구게임) 진행/<br>음료판매, 무알콜 하이볼 판매, 타코야끼, 꼬치류 판매</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>이자카야 주점 컨셉/<br>꼬치류, 하이볼 판매</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>경영경제대학관 가는 길목 / 사범대학관 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+
 
     <div class="bottom_box sabum">
       <div class="bottom_box_title">[25] 영어교육과</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>영어교육과</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>영교인의 밤</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>음료와 타코야끼 및 볶음밥 조리 및 판매</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>경영경제대학관 가는 길목 / 사범대학관 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+
 
     <div class="bottom_box sabum">
       <div class="bottom_box_title">[26] 수학교육과</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>수학교육과</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>시원한 냉면 & 물풍선 던지기</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>냉면 조리 및 판매/<br>물풍선 던지기 이벤트 진행</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>경영경제대학관 가는 길목 / 사범대학관 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box sabum">
       <div class="bottom_box_title">[27] 교육학과</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>교육학과</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>사랑은 음료를 타고~♡</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>음료(아이스티, 커피, 자몽허니블랙티)/<br>타투스티커, 번호 매칭</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>경영경제대학관 가는 길목 / 사범대학관 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+
 
     <div class="bottom_box gyoung">
       <div class="bottom_box_title">[28] 융합경영학과</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>융합경영학과</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>나쵸에 빠졌마요?</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>나쵸&콘마요, 음료(에이드) 판매</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>경영경제대학과 가는 길목</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box gyoung">
       <div class="bottom_box_title">[29] 경영학부</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>경영학부</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>경영 꼬치 피었습니다</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>꼬치 및 에이드 판매/<br>집행부를 이겨라 놀거리 부스 운영</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>경영경제대학과 가는 길목</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
-    <div class="bottom_box gyoung" >
-      <div class="bottom_box_title">[30] 경제금융학부</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+    <div class="bottom_box gyoung">
+      <div class="bottom_box_title">[30] 경제금융학과</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>경제금융학과</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>SO POP!</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>소떡소떡, 콜팝 판매</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>경영경제대학과 가는 길목</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    
+
+
     <div class="bottom_box gyoung">
       <div class="bottom_box_title">[31] 글로벌경영학과</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>글로벌경영학과</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>글경상회</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>닭꼬치, 염통꼬치 등의 꼬치류와 에이드류,
+                종이뽑기 이벤트, 해시태그 이벤트</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>버터오징어</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>경영경제대학관 뒤편 주차장</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box gong">
       <div class="bottom_box_title">[32] 화공신소재전공</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>화공신소재전공</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>승환이네 파라솔</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>멜로우티, 에이드, 빙수</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>무알콜 칵테일, 카나페+나쵸+소스, 소시지, 설탕토마토</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>경영경제대학관 가는 길목</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box gong">
       <div class="bottom_box_title">[33] 융합공과대학</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>융합공과대학 학생회</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>크로플리</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>크로플 및 슬러쉬, 미니게임, 포토 프린트 부스</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>경영경제대학관 가는 길목</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box gong">
       <div class="bottom_box_title">[34] 애니메이션전공</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>애니메이션전공</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>애니메이션 카페</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>아이스티&미숫가루 음료, 쫀드기와 토스트 간식, 애니메이션 음식 (하울 정식, 키리모찌)
+              </td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>경영경제대학관 가는 길목</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box gong">
       <div class="bottom_box_title">[35] 생명공학전공</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>생명공학전공</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>바로다방</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>호떡 아이스크림 및 크로플 아이스크림, 미숫가루</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>경영경제대학관 가는 길목</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box gong">
       <div class="bottom_box_title">[36] 전기공학전공</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>전기공학전공</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>찌릿찌릿 스낵</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>소떡소떡, 나쵸, 콘치즈, 에이드</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>경영경제대학관 가는 길목</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box gong">
       <div class="bottom_box_title">[37] 화학에너지공학전공</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>화학에너지공학전공</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>에너지 시네마</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>팝콘, 버터오징어, 탄산음료,
+                환경 관련 퀴즈 이벤트 및 폴라로이드 사진 판매</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>경영경제대학관 가는 길목</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box gong">
       <div class="bottom_box_title">[38] 휴먼지능정보공학전공</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>휴먼정보지능공학전공</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>휴먼주막</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>김치전/감자전 및 무알콜 막걸리</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>경영경제대학관 뒤편 주차장 가는 길</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box gong">
       <div class="bottom_box_title">[39] 게임전공</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>게임전공</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>좋은 소떡, 위대한 음료</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>소떡소떡, 무알콜칵테일/에이드 각 2-3종</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>경영경제대학관 뒤편 주차장 가는 길</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box gong">
       <div class="bottom_box_title">[40] 한일문화콘텐츠전공</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>한일문화콘텐츠전공</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>義兄弟카페</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>일본전통 게임 (킨교스쿠이, 다루마오토시, 요요쯔리),
+                추첨뽑기 (오미쿠지, 가라폰),
+                크림 소다</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>미술가정관 앞 <br> 사슴상 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box gong">
       <div class="bottom_box_title">[41] 컴퓨터과학전공</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>컴퓨터과학전공</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>상명랜드</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>달고나 체험 및 판매, 행운의 복권 게임</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>경영경제대학관 뒤편 주차장</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box gong">
       <div class="bottom_box_title">[42] 지능·데이터융합학부</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>지능데이터융합학부</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>핀빅스낵바</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>나초콘마요 & 음료, 간단한 콘텐츠 진행</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>오뎅탕, 화채(황도), 술없는 칵테일</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>경영경제대학관 뒤편 주차장</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box yeah">
       <div class="bottom_box_title">[43] 조형예술전공</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>조형예술전공</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>on the palette</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>음료(에이드), 페이스페인팅, 엽서 굿즈</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>미술가정관 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box yeah">
       <div class="bottom_box_title">[44] 식품영양학전공</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>식품영양학전공</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>낮에도 밤에도</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>휴게소 컨셉 식음료 (떡볶이, 알감자, 캔음료 등)</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>감자채전, 순대볶음, 두루치기, 등 안주류</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>미술가정관 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box yeah">
       <div class="bottom_box_title">[45] 의류학전공</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>의류학전공</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>오늘은 내가 꼬치왕</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td> 어묵탕, 어묵꼬치, 순위 이벤트</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>어묵탕</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>미술가정관 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box yeah">
       <div class="bottom_box_title">[46] 문화예술대학</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>문화예술대학 학생회</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>하이시그널</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>사탕시그널, N:N 매칭, 미니게임</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>사탕시그널, N:N 매칭, 미니게임</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>미술가정관 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box yeah">
       <div class="bottom_box_title">[47] 스포츠건강관리전공</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>스포츠건강관리전공</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>"돈보다 운을 벌어라-스건-"
+                "운동처방? 운도 처방"</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>뽑기, 로또, 미니게임(탁구대 이용)</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>미술가정관 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box yeah">
       <div class="bottom_box_title">[48] 생활예술전공</div>
-      <div class="bottom_box_desc">설명 설명 설명입니다.</div>
+      <div class="bottom_box_desc">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th class="table-title" scope="row">학과명</th>
+              <td>생활예술전공</td>
+            </tr>
+            <hr style="border: solid 2px black;">
+            <tr>
+              <th class="table-title" scope="row">부스명</th>
+              <td>너의 마음을 뚜까뚜까 큥!</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(주간)</th>
+              <td>콘치즈, 나초, 제빵류를 포함한 디저트 음료,
+                메론소다, 콜라</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">운영품목(야간)</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th class="table-title" scope="row">장소</th>
+              <td>미술가정관 앞</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="bottom_box food">
@@ -324,7 +1484,7 @@
       <div class="bottom_box_desc">설명 설명 설명입니다.</div>
     </div>
 
-    
+
 
   </div>
 

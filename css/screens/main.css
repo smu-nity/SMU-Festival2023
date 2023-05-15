@@ -26,7 +26,7 @@
     text-align: center;
 }
 
-.nav-box{
+.nav-box {
     border-radius: 10px;
     border: 1px solid #c5c3c3;
     padding: 3%;
@@ -34,6 +34,10 @@
     box-shadow: 18px, 18px, 30px, #D1D9E6;
 }
 
-.hidden{
+.hidden {
     display: none;
+}
+
+.table-title {
+    font-weight: 600;
 }

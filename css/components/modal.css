@@ -19,12 +19,12 @@
 }
 
 
-.bottom_sheet{
+.bottom_sheet {
     display: flex;
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 20%;
+    height: 10%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     background-color: #FFFFFF;
@@ -35,7 +35,7 @@
     transition-duration: 1s;
 }
 
-.bottom_sheet_handle_wrap{
+.bottom_sheet_handle_wrap {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -44,7 +44,7 @@
     margin-bottom: 10px;
 }
 
-.bottom_sheet_handle{
+.bottom_sheet_handle {
     width: 20%;
     height: 10px;
     background-color: #7c7979;
@@ -52,7 +52,7 @@
     margin-top: 10px;
 }
 
-.bottom_box{
+.bottom_box {
     width: 80%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -64,60 +64,60 @@
     padding-bottom: 20px;
 }
 
-.bottom_box_title{
+.bottom_box_title {
     font-weight: 600;
     text-decoration: underline;
 }
 
-.bottom_box_desc{
+.bottom_box_desc {
     margin-top: 10px;
 }
 
-.up_sensor{
-    z-index:1;
+.up_sensor {
+    z-index: 1;
     position: absolute;
     background: transparent;
     width: inherit;
     height: 100%;
     bottom: 0;
-    height: 20%;
+    height: 10%;
     transition-duration: 1s;
 }
 
 /* 바텀시트 박스별 색깔 */
 
-.insa{
-    background-color: rgba(255, 127, 127,0.2);
+.insa {
+    background-color: rgba(255, 127, 127, 0.2);
 }
 
-.sabum{
-    background-color: rgba(158, 197, 213,0.2);
+.sabum {
+    background-color: rgba(158, 197, 213, 0.2);
 }
 
-.gyoung{
-    background-color: rgba(243, 205, 173,0.2);
+.gyoung {
+    background-color: rgba(243, 205, 173, 0.2);
 }
 
-.gong{
-    background-color: rgba(203, 159, 253,0.2);
+.gong {
+    background-color: rgba(203, 159, 253, 0.2);
 }
 
-.yeah{
-    background-color: rgba(175, 203, 61,0.2);
+.yeah {
+    background-color: rgba(175, 203, 61, 0.2);
 }
 
-.chong{
-    background-color: rgba(14, 32, 127,0.2);
+.chong {
+    background-color: rgba(14, 32, 127, 0.2);
 }
 
-.you{
-    background-color: rgba(207, 195, 181,0.2);
+.you {
+    background-color: rgba(207, 195, 181, 0.2);
 }
 
-.dong{
-    background-color: rgba(252, 206, 226,0.2);
+.dong {
+    background-color: rgba(252, 206, 226, 0.2);
 }
 
-.food{
-    background-color: rgba(230, 232, 58,0.2);
+.food {
+    background-color: rgba(230, 232, 58, 0.2);
 }
