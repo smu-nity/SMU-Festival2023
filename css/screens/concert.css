@@ -17,6 +17,7 @@
     align-items: center;
 }
 
-.body {
+.concert-body {
     overflow: auto;
+    height: 150vh;
 }
