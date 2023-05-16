@@ -19,7 +19,7 @@ function toggle2(e) {
         lists[i].style.cssText = " border: 1px solid rgba(0,0,0,0.125);";
       }
       //단과대 text
-      parent.innerText = "단과대";
+  
       //맵 이미지 바꾸기
       document.getElementById("campus_map").src = "/img/map.png";
       return
