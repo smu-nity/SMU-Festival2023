@@ -41,3 +41,11 @@
 .table-title {
     font-weight: 600;
 }
+
+.table-bordered {
+    table-layout: fixed;
+}
+
+.table-bordered th {
+    width: 35%;
+}
