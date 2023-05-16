@@ -18,7 +18,6 @@ function toggle2(e) {
       for (i = 0; i < lists.length; i++) {
         lists[i].style.cssText = " border: 1px solid rgba(0,0,0,0.125);";
       }
-      //단과대 text
   
       //맵 이미지 바꾸기
       document.getElementById("campus_map").src = "/img/map.png";
