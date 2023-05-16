@@ -1,6 +1,6 @@
 function toggle(e) {
   var parent = e.parentNode.parentNode.parentNode.getElementsByClassName("dropdown-toggle")[0];
-  var all = document.gtsBetElemenyClassName("bottom_box");
+  var all = document.getElementsByClassName("bottom_box");
   var btn = document.getElementsByClassName("btn");
   var target = e.getAttribute("target");
   var lists = document.getElementsByClassName("list-group-item")
@@ -9,20 +9,19 @@ function toggle(e) {
     //바텀시트 전체 항목 보이기
     for (i = 0; i < all.length; i++) {
       all[i].style.display = "block";
-      all[i].style.height = "200px";
-      // all[i].style.height = "auto";
+      all[i].style.height = "auto";
     }
     //모든 버튼 초기화
     for (i = 0; i < btn.length; i++) {
-      btn[i].style.cssText = "background-color: rgba(219, 226, 233, 0.7); border: 1px solid transparent;";
+      btn[i].style.border = "1px solid transparent";
     }
     for (i = 0; i < lists.length; i++) {
-      lists[i].style.cssText = " border: 1px solid rgba(0,0,0,0.125);";
+      lists[i].style.cssText = " border: 1px solid transparent;";
     }
     //단과대 text
     parent.innerText = "단과대";
     //맵 이미지 바꾸기
-    document.getElementById("campus_map").src = "/img/home/map.png";
+    document.getElementById("campus_map").src = "/img/map.png";
     return
   }
 
@@ -38,7 +37,7 @@ function toggle(e) {
 
   //맵 이미지 바꾸기
   var target = e.getAttribute("target");
-  // document.getElementById("campus_map").src = "/img/home/"+target+".png";
+  document.getElementById("campus_map").src = "/img/map/"+target+".png";
 
   //바텀시트 내용 바꾸기
   //모든 내용 지우기
@@ -54,10 +53,10 @@ function toggle(e) {
   //선택 css
   //모든 버튼 초기화
   for (i = 0; i < btn.length; i++) {
-    btn[i].style.cssText = "background-color: rgba(219, 226, 233, 0.7); border: 1px solid transparent;";
+    btn[i].style.cssText = " border: 1px solid transparent;";
   }
   for (i = 0; i < lists.length; i++) {
-    lists[i].style.cssText = " border: 1px solid rgba(0,0,0,0.125);";
+    lists[i].style.cssText = " border: 1px solid transparent;";
   }
 
   //선택 버튼 활성화

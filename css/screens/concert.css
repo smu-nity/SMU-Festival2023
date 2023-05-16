@@ -1,0 +1,17 @@
+#concert_table {
+    width: 98%;
+    height: 50%;
+}
+
+#concert_title {
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container_concert{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

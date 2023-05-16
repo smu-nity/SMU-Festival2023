@@ -44,7 +44,6 @@ scroll_button.addEventListener("touchend", (e) => {
   percent.style.display = "none";
 });
 
-
 var isUp = 0;
 document.getElementsByClassName('up_sensor')[0].addEventListener("touchmove", (e) => {
   var bottom_sheet = document.getElementsByClassName('bottom_sheet')[0]
@@ -56,18 +55,16 @@ document.getElementsByClassName('up_sensor')[0].addEventListener("touchmove", (e
 
 });
 
-
+var handle_wrap = document.getElementsByClassName('bottom_sheet_handle_wrap')[0];
 var bottom_sheet = document.getElementsByClassName('bottom_sheet')[0];
 let bottom_touch_start = 0;
 let bottom_scroll_start;
 
+//맨 위에서 아래로 스크롤했을 경우
 bottom_sheet.addEventListener("touchstart", (e) => {
   bottom_touch_start = e.touches[0].pageY; // 터치가 시작되는 위치 저장
   bottom_scroll_start = bottom_sheet.scrollTop //터치 시작 시 스크롤 위치 저장
 });
-
-
-
 bottom_sheet.addEventListener("touchmove", (e) => {
   if (((bottom_touch_start - e.touches[0].pageY) < 0) && (bottom_scroll_start <= 0)) {
     //바텀시트 내리기
@@ -78,21 +75,34 @@ bottom_sheet.addEventListener("touchmove", (e) => {
 });
 
 
+//맨 위 핸들을 아래로 당겼을 경우
+handle_wrap.addEventListener("touchstart", (e) => {
+  bottom_touch_start = e.touches[0].pageY; // 터치가 시작되는 위치 저장
+});
+handle_wrap.addEventListener("touchmove", (e) => {
+  console.log("handle")
+  if ((bottom_touch_start - e.touches[0].pageY) < 0) {
+    //바텀시트 내리기
+    bottom_sheet.style.height = 10 + "%"
+    document.getElementsByClassName('up_sensor')[0].style.display = "block";
+    document.getElementsByClassName('up_sensor')[0].style.height = "10%";
+  };
+});
+
 //map_info
 var width = parseInt(getComputedStyle(document.getElementById('map_info')).width);
 var info_button = document.getElementsByClassName('info_button')[0];
 var map_info = document.getElementsByClassName("map_info")[0];
 
-// 초기에 닫혀있는 상태로 설정
-map_info.style.left = "-" + width - 7 + "px";
-info_button.innerText = ">";
-
 info_button.addEventListener("click", (e) => {
   if (info_button.innerText == "<") {
-    map_info.style.left = "-" + width - 7 + "px";
+    map_info.style.left = "-25%";
+    map_info.style.right = "105%";
     info_button.innerText = ">";
   } else {
     map_info.style.left = "0";
+    map_info.style.right = "70%";
     info_button.innerText = "<";
+
   }
 });
