@@ -30,19 +30,19 @@
 }
 
 
-.home_button {  
+.home_button {
     border-radius: 15px;
     width: 104px;
     height: 50px;
-    background-color: rgba(90, 111, 152,0.5);
+    background-color: rgba(90, 111, 152, 0.5);
     cursor: pointer;
     outline: none;
-    box-shadow: 1px 5px 0 rgb(0,0,0,0.3);
-    
+    box-shadow: 1px 5px 0 rgb(0, 0, 0, 0.3);
+
     z-index: 2;
     position: absolute;
     font-weight: 600;
-    bottom: 25%;
+    bottom: 22%;
     left: 33%;
     min-width: 150px;
     max-width: 250px;
@@ -54,11 +54,11 @@
     position: absolute;
     bottom: 24.5%;
     left: 33%;
-    box-shadow: 1px 1px 0 rgb(0,0,0,0.3);
+    box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.3);
 }
 
 
-.home_button:hover{
+.home_button:hover {
     background-color: rgb(176, 196, 238);
 }
 
@@ -75,12 +75,12 @@
     background-color: rgba(90, 111, 152, 0.5);
     cursor: pointer;
     outline: none;
-    box-shadow: 1px 5px 0 rgb(0,0,0,0.3);
-    
+    box-shadow: 1px 5px 0 rgb(0, 0, 0, 0.3);
+
     z-index: 2;
     position: absolute;
     font-weight: 600;
-    bottom: 16%;
+    bottom: 14%;
     left: 33%;
     min-width: 150px;
     max-width: 250px;
@@ -92,11 +92,11 @@
     position: absolute;
     bottom: 15.5%;
     left: 33%;
-    box-shadow: 1px 1px 0 rgb(0,0,0,0.3);
+    box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.3);
 }
 
 
-.concert_button:hover{
+.concert_button:hover {
     background-color: rgb(176, 196, 238);
 }
 
@@ -104,4 +104,3 @@
     position: relative;
     z-index: 1;
 }
-
