@@ -37,12 +37,12 @@
 
 .bottom_sheet_handle_wrap {
     z-index: 1;
-    background: linear-gradient(to bottom, 
-    rgba(255, 255, 255, 1) 20%,
-    rgba(255, 255, 255, 0.75) 35%,
-    rgba(255, 255, 255, 0.5) 60%,
-    rgba(255, 255, 255, 0.25) 85%,
-    rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 1) 20%,
+            rgba(255, 255, 255, 0.75) 35%,
+            rgba(255, 255, 255, 0.5) 60%,
+            rgba(255, 255, 255, 0.25) 85%,
+            rgba(255, 255, 255, 0) 100%);
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -94,6 +94,10 @@
 }
 
 /* 바텀시트 박스별 색깔 */
+
+.prom {
+    background-color: rgba(224, 231, 45, 0.2);
+}
 
 .insa {
     background-color: rgba(255, 127, 127, 0.2);

@@ -1,14 +1,23 @@
 #emergency-alarm {
     text-align: center;
-    display: block;
+    display: flex;
     background: rgba(250, 250, 250, 0.6);
     padding: 10px 0px;
-    font-size: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 #emergency-alarm i {
-    color: rgba(0, 0, 0, 0.3);
+    color: black;
     margin: 0px 5px;
+    font-size: small;
+}
+
+#emergency-alarm a {
+    text-decoration-line: none;
+    display: inline;
+    font-size: small;
+    color: black;
 }
 
 #main_background {
