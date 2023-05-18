@@ -52,7 +52,7 @@
 .home_button:active {
     z-index: 2;
     position: absolute;
-    bottom: 24.5%;
+    bottom: 20.5%;
     left: 33%;
     box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.3);
 }
@@ -90,7 +90,7 @@
 .concert_button:active {
     z-index: 2;
     position: absolute;
-    bottom: 15.5%;
+    bottom: 10.5%;
     left: 33%;
     box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.3);
 }
