@@ -7,6 +7,8 @@
 
 배포 : AWS EC2, Apache2.4
 
+주요 기술 구현 : 스크롤 슬라이더, 바텀 시트, 가변 상자
+
 완성 페이지 <br>
 ![image](https://github.com/DDonghyeo/smufestival2023/assets/98632435/be0a674e-be2c-4df2-ad31-b19bfccfafda)
 ![image](https://github.com/DDonghyeo/smufestival2023/assets/98632435/05424842-230c-4838-8f68-313fb1cca5cc)
